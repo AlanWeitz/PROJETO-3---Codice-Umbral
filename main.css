@@ -1,0 +1,275 @@
+.navbar {
+    background-color: #040841;
+}
+
+#cabecalho {
+    font-family: 'Cinzel', serif;
+    color: #fff !important;
+}
+
+#cabecalho .navbar-brand {
+    font-size: 2.5rem;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #2c116b !important;
+    color: #ffffff !important;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    background-color: #fff !important;
+}
+
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-inner {
+    border-bottom: #040841 10px solid !important;
+}
+
+#sobre-texto {
+    background-color: #1d065238;
+    color: #000000;
+}
+
+#img-sobre {
+    border: #040841 10px solid;
+}
+
+#img-sobre2 {
+    border: #242daa 5px solid;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(200, 200, 255, 0.3);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.hover-shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(200, 200, 255, 0.2);
+}
+
+#sobre-texto h2, h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 40px !important;
+    color: #2c116b !important;
+}
+
+#nightreign {
+    background-image: url('./img/portao.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top: #040841 10px solid !important;
+    border-bottom: #040841 10px solid !important;;
+}
+
+#sobre-texto p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px !important;
+}
+
+#nightreign h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 40px !important;
+}
+
+#nr-title {
+  -webkit-text-stroke: 1px #242daa; 
+  background-color: #c6c4cfcb;
+}
+
+#nightreign h5 {
+    font-family: 'Cinzel', serif;
+    font-size: 25px !important;
+    color: #2c116b !important;
+}
+    
+#nightreign p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px !important;
+}
+
+#nightreign .card {
+    border: 5px solid #242daa !important;
+}
+
+.card-body {
+    border-top: #242daa 5px solid !important;
+    background-color: #c6c4cfcb !important;
+    color: #000000 !important;
+}
+
+#glossario {
+    background-image: url('./img/fundo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: #040841 10px solid !important;
+    border-bottom: #040841 10px solid !important;
+}
+s
+#glossario h5 {
+    font-family: 'Cinzel', serif;
+    font-size: 25px !important;
+    color: #000000 !important;
+}
+
+#glossario p {
+    font-family: "EB Garamond", serif;
+    font-size: 25px;
+}
+
+#conteudo {
+    background-color:#7e6a9e !important;
+    -webkit-text-stroke: 1px #242daa;   
+}
+
+.img-tab-extra {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.tabs {
+    color: #fff !important;
+    border: #040841 5px solid !important;
+    background-color: #242daa !important;
+}
+
+#tab-1 .card {
+    background-color:#6206f7 !important;
+}
+
+.tabs.active {
+    background-color: #565fd698 !important;
+}
+
+.card-tricefalo {
+    background-color: #c2442e !important;
+}
+
+.card-adel {
+    background-color: #5b38adb2 !important;
+}
+
+.card-gnoster {
+    background-color: #4493d4 !important;
+}
+
+.card-augure {
+    background-color: #0026ff !important;
+}
+
+.card-libra {
+    background-color: #ffae00 !important;
+}
+
+.card-fulghor {
+    background-color: #fffb00 !important;
+}
+
+.card-caligo {
+    background-color: #00eeff !important;
+}
+
+.card-heolstor {
+    background-color: #1e014d !important;
+}
+
+.card-cratera {
+    background-color: #f10606 !important;
+}
+
+.card-montanha {
+    background-color: #00e1ff !important;
+}
+
+.card-apodrecida {
+    background-color: #eb5c09 !important;;
+}
+
+.card-noklateo {
+    background-color: #1e014d !important;
+}
+
+.text-colored {
+    color: #2c116b !important;
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: #853d3d !important;
+    color: #fff !important;
+}
+
+#fale-conosco button {
+    background-color: #2c116b !important;
+    color: #fff !important
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.modal-content.roxo-escuro {
+  background-color: #1a0033; 
+  color: #d7a4ff; 
+  border: 2px solid #d7a4ff;
+}
+
+.modal-content.roxo-escuro .form-label,
+.modal-content.roxo-escuro .form-control,
+.modal-content.roxo-escuro .modal-title {
+  color: #d7a4ff;
+}
+
+.modal-content.roxo-escuro .form-control {
+  background-color: #2a004f;
+  border: 1px solid #d7a4ff;
+  color: #d7a4ff;
+}
+
+.modal-content.roxo-escuro .form-control::placeholder {
+  color: #b47bff;
+}
+
+.modal-content.roxo-escuro .btn-close {
+  filter: invert(100%);
+}
+
+.modal-content.roxo-escuro .btn-enviar {
+  background-color: #d7a4ff;
+  color: #1a0033;
+  font-weight: bold;
+  border: none;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280vh;
+    }
+}

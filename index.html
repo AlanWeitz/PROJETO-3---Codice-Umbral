@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códice Umbral</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/icon.png" type="image/png" />
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0">Códice Umbral</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-controller me-1"></i>
+                            Sobre o Códice
+                        </a>
+                    </li> 
+                    <li class="nav-item fw-bold">
+                        <a href="#nightreign" class="nav-link ">
+                            <i class="bi bi-question-circle"></i>
+                            Como Funciona
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#glossario" class="nav-link ">
+                            <i class="bi bi-book"></i>
+                            Conteúdo
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#cadastroModal">
+                            <i class="bi bi-arrow-bar-down"></i>
+                            <strong>Mande seu Feedback!</strong>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+        <div id="carousel-sobre" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-sobre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-sobre" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-sobre" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/NRLogo.jpg" class="d-block w-100" alt="Logo do nightreign">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/magacarousel.jpg" class="d-block w-100" alt="Reclusa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/wieldercarousel.jpg" class="d-block w-100" alt="Wielder">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-sobre" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-sobre" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        <div class="pt-5 pb-5" id="sobre-texto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 p-4">
+                        <img src="./img/ironmenial.jpeg" class="d-block w-100 rounded-circle img-fluid rounded shadow-sm hover-glow" alt="Iron Menial" id="img-sobre">
+                    </div>
+                    <div class="col-md-7 mt-3 mt-md-0">
+                        <h2 class="section-title">Sobre o Códice</h2>
+                        <p>
+                            Este códice é dedicado ao universo sombrio e misterioso de <strong class="text-colored">Nightreign</strong> que explora os domínios esquecidos da noite. Aqui você encontrará um resumo das mecânicas, classes, chefes e ambientações que compõem esse mundo tenebroso.
+                        </p>
+                        <p>
+                            De cavaleiros lunares a monstros ocultos sob as estrelas, nosso objetivo é guiar os jogadores por entre as sombras do reino esquecido. Prepare-se para enfrentar o desconhecido.
+                        </p>
+                        <img src="/img/ER.gif" alt="Gif do Nightreign" class="d-block w-100 rounded mt-3 img-fluid rounded shadow-sm hover-glow" id="img-sobre2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nightreign" class="pt-5 pb-5 text-light">
+  <div class="container">
+    <div class="row mb-4">
+      <h2 class="section-title text-center"><span class="text-colored rounded" id="nr-title">ELDEN RING NIGHTREIGN</span></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 bg-secondary text-light border-0 shadow hover-shadow">
+          <img src="./img/Coop.gif" class="card-img-top rounded-top" alt="GIF demonstração do coop">
+          <div class="card-body">
+            <h5 class="card-title text-warning">O que é o Nightreign?</h5>
+            <p class="card-text">
+              Nightreign é um <strong class="text-colored">spin-off cooperativo de Elden Ring</strong> ambientado em um universo amaldiçoado pela escuridão eterna. Com narrativa fragmentada o jogo convida o jogador a desvendar os mistérios de uma terra onde a noite reina absoluta.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 bg-secondary text-light border-0 shadow hover-shadow">
+          <img src="./img/boss.gif" class="card-img-top rounded-top" alt="GIF de um boss">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Como Funciona</h5>
+            <p class="card-text">
+              O jogo mantém a base Soulslike, mas com novas mecânicas como <strong class="text-colored">relíquias, classes e um sitema roguelike</strong>. Estratégia, exploração e escolhas morais definem seu destino.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 bg-secondary text-light border-0 shadow hover-shadow">
+          <img src="./img/mundo.gif" class="card-img-top rounded-top" alt="GIF visão do mapa">
+          <div class="card-body">
+            <h5 class="card-title text-warning">O Mundo</h5>
+            <p class="card-text">
+              Viaje por terras amaldiçoadas pela noite: <strong class="text-colored">florestas eternamente escuras, fortalezas esquecidas e terras mutáveis</strong>. Enfrente criaturas deformadas pela ausência de luz e descubra segredos do passado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="glossario" class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-title text-center pb-5"><span class="text-colored rounded" id="conteudo">MECÂNICAS E CONTEÚDO</span></h2>
+        </div>
+        <div class="row">
+            <aside class="col-md-2">
+                <nav class="nav nav-pills flex-column nav-glossario">
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#tab-1" class="tabs fw-bold text-start nav-link text-colored active">Nightfarers</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#tab-2" class="tabs fw-bold text-start nav-link text-colored">Lordes da Noite</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#tab-3" class="tabs fw-bold text-start nav-link text-colored">Terras Mutáveis</button>
+                </nav>
+            </aside>
+            <div class="col-md-10">
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab-1">
+            <div class="row g-4">
+                <!-- Selvagem -->
+                <div class="col-md-3">
+                    <div class="card h-100 bg-light">
+                        <img src="./img/selvagem.png" class="card-img-top rounded" alt="Imagem do Selvagem">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/Sicone.png" alt="Ícone Selvagem" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Selvagem</h5>
+                            </div>
+                            <p class="card-text">Um jovem à procura do Lorde da Noite.</p>
+                            <p class="card-text">Este espadachim desafiou a morte repetidamente com seu formidável sexto sentido para combate.</p>
+                            <p class="card-text">Possui em seu arsenal um arremesso de gancho para puxar inimigos e uma estaca de ataque para gerar uma explosão.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guardião -->
+                <div class="col-md-3">
+                    <div class="card h-100 bg-light">
+                        <img src="./img/guardiao.png" class="card-img-top rounded" alt="Imagem do Guardião">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/Gicone.png" alt="Ícone Guardião" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Guardião</h5>
+                            </div>
+                            <p class="card-text">Cavaleiro plúmero do reino alado. Um antigo capitão ferido na guerra, enfrentou os inimigos para proteger seu bando.</p>
+                            <p class="card-text">Com a asa cria um violento ciclone e, usando sua alabarda, salta e mergulha para erguer uma área de proteção.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Olho de Ferro -->
+                <div class="col-md-3">
+                    <div class="card h-100 bg-light">
+                        <img src="./img/olho de ferro.png" class="card-img-top rounded" alt="Olho de Ferro">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/Oicone.png" alt="Ícone Olho de Ferro" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Olho de Ferro</h5>
+                            </div>
+                            <p class="card-text">Assassino da irmandade. Ganhou a alcunha de "Olho de Ferro" por sua visão aguçada e julgamento implacável.</p>
+                            <p class="card-text">Usa uma adaga para criar pontos fracos e dispara flechas que ignoram qualquer defesa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duquesa -->
+                <div class="col-md-3">
+                    <div class="card h-100 bg-light">
+                        <img src="./img/duquesa.png" class="card-img-top rounded" alt="Duquesa">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/Dicone.png" alt="Ícone Duquesa" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Duquesa</h5>
+                            </div>
+                            <p class="card-text">Ladra virtuosa e enteada do visconde. Sua habilidade de escapar de qualquer armadilha lhe rendeu seu título.</p>
+                            <p class="card-text">Usa um relógio de bolso para repetir eventos e um véu que esconde aliados próximos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corsário -->
+                <div class="col-md-3">
+                    <div class="card h-100 bg-light">
+                        <img src="./img/corsario.png" class="card-img-top rounded" alt="Corsário">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/Cicone.png" alt="Ícone Corsário" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Corsário</h5>
+                            </div>
+                            <p class="card-text">Pirata que chegou às Terras Intermédias em busca de aventura contra o Lorde da Noite.</p>
+                            <p class="card-text">Assume postura ofensiva e usa uma cunha para invocar um túmulo gigante.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Espectro -->
+                <div class="col-md-3">
+                    <div class="card h-100 bg-light">
+                        <img src="./img/espectro.png" class="card-img-top rounded" alt="Espectro">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/Eicone.png" alt="Ícone Espectro" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Espectro</h5>
+                            </div>
+                            <p class="card-text">Boneca possuída pela alma de uma aristocrata falida. Busca vingança pela linhagem perdida.</p>
+                            <p class="card-text">Invoca familiares derrotados e usa uma marcha que torna aliados imortais por um tempo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reclusa -->
+                <div class="col-md-3">
+                    <div class="card h-100 bg-light">
+                        <img src="./img/reclusa.png" class="card-img-top rounded" alt="Reclusa">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/Ricone.png" alt="Ícone Reclusa" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Reclusa</h5>
+                            </div>
+                            <p class="card-text">Bruxa da Floresta Profunda. Conjuradora de feitiços antigos que vive nas sombras.</p>
+                            <p class="card-text">Usa resíduos para lançar um coquetel de afinidades e canta um cântico proibido com símbolos de sangue.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executor -->
+                <div class="col-md-3">
+                    <div class="card h-100 bg-light">
+                        <img src="./img/executor.png" class="card-img-top rounded" alt="Executor">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/EXicone.png" alt="Ícone Executor" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Executor</h5>
+                            </div>
+                            <p class="card-text">Alma condenada com o corpo fundido à armadura. Desapareceu após um tempo aprisionado.</p>
+                            <p class="card-text">Empunha uma lâmina amaldiçoada e pode assumir a forma de uma fera primordial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content">
+        <div class="tab-pane fade" id="tab-2">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 card-tricefalo">
+                        <img src="./img/tricefalo.jpg" class="card-img-top rounded img-tab-extra" alt="Imagem do Tricéfalo">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/tricefalo.png" alt="Ícone Tricéfalo" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Tricéfalo</h5>
+                            </div>
+                            <p class="card-text">Uma fera de muitas pernas que aparece das sombras, carregando nas suas costas uma espada com corrente usada para caçar sua presa.</p>
+                            <p class="card-text">Entre os dentes das suas muitas cabeças tremeluzem chamas extraordinárias.</p>
+                            <p class="card-text">Apenas a luz sagrada pode obstruir a caçada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-adel">
+                        <img src="./img/adel.jpg" class="card-img-top rounded img-tab-extra" alt="Imagem do Adel">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/adelicone.png" alt="Ícone Mandíbula Aberta" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Mandíbula Aberta</h5>
+                            </div>
+                            <p class="card-text">Cavaleiro plúmero do reino alado. Um antigo capitão ferido na guerra, enfrentou os inimigos para proteger seu bando.</p>
+                            <p class="card-text">Com a asa cria um violento ciclone e, usando sua alabarda, salta e mergulha para erguer uma área de proteção.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-gnoster">
+                        <img src="./img/gnoster.jpg" class="card-img-top rounded img-tab-extra" alt="Imagem do Gnoster">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/gnostericone.png" alt="Ícone Gnoster" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Peste Senciente</h5>
+                            </div>
+                            <p class="card-text">Um inseto voador e tesoura viva que anda pela terra. Aqueles que tiverem sorte o bastante para escapar da chuva de magia do primeior serão vitimas da tesoura.</p>
+                            <p class="card-text">Se envenenado, ele comerá o hospedeiro, pois um parasita não pode ser removido sem ajuda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-augure">
+                        <img src="./img/augure.jpg" class="card-img-top rounded img-tab-extra" alt="Áugure">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/augureicone.png" alt="Ícone Áugure" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Áugure</h5>
+                            </div>
+                            <p class="card-text">Uma entidade desconhecida que flutua nos céus. Faz dos seus arredores um oceano, que pode misturar-se com qualquer vida encontrada</p>
+                            <p class="card-text">Tenham cautela, guerreiros. O inimigo pode não ser o que sempre se enxerga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-libra">
+                        <img src="./img/libra.jpg" class="card-img-top rounded img-tab-extra" alt="Libra">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/libra.png" alt="Ícone Libra" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Fera Equilibrada</h5>
+                            </div>
+                            <p class="card-text">Um ser com cabeça de cabra que finge ser um homem, que dizer ser capaz de usar uma forma dúbia de alquemia. Ouro falso causa perda de sanidade, atraindo a loucura</p>
+                            <p class="card-text">Contudo, aqueles que fomentam a loucura certamente sucumbirão à mesma aflição no final.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-fulghor">
+                        <img src="./img/fulghor.jpg" class="card-img-top rounded img-tab-extra" alt="Fulghor">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/fulghoricone.png" alt="Ícone Fulghor" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Cavaleiro Taciturno</h5>
+                            </div>
+                            <p class="card-text">Um antigo centauro consumido pela batalha. Seu fervor pelos deuses a quem ele serve ainda queima dentro dele, exercendo uma forma sagrada do poder da Noite</p>
+                            <p class="card-text">De acordo com a lenda, os deuses radiante foram capazes de se ocultarem no rugido do trovão.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-caligo">
+                        <img src="./img/caligo.jpg" class="card-img-top rounded img-tab-extra" alt="Caligo">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/caligoicone.png" alt="Ícone Caligo" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Fissura na Névoa</h5>
+                            </div>
+                            <p class="card-text">Um dragão pré-histórico que esta à espreita na névoa. Dizem que o grande par de olhos sombrios, emoldurado pelo nevoeiro frígido, aparece nas grande conjunturas da história.</p>
+                            <p class="card-text">Sua frieza pode roubar prontamente o calor da vida das suas vítimas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-heolstor">
+                        <img src="./img/heolstor.jpg" class="card-img-top rounded img-tab-extra" alt="Heolstor">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./img/heolstoricone.png" alt="Ícone Heolstor" style="width: 60px; height: 60px;" class="me-3 rounded-circle">
+                                <h5 class="fw-bold text-colored mb-0">Aspecto da Noite</h5>
+                            </div>
+                            <p class="card-text">Além da Noite sem limites, há uma figura nebulosa de uma pessoa. Essa é a origem da Noite, inimiga do mundo.</p>
+                            <p class="card-text">Os sinais irão revelar, onde as pegadas do Lorde da Noite Primordial nos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content">
+        <div class="tab-pane fade" id="tab-3">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 card-cratera">
+                        <img src="./img/cratera.png" class="card-img-top rounded img-tab-extra" alt="Cratera">
+                        <div class="card-body">
+                                <h5 class="fw-bold text-colored mb-0">Cratera</h5>
+                            <p class="card-text">Uma sublime cratera fumegante. Um antigo templo construído para homenagear as artes da forja, atos divinos. Erupções ao longo dos séculos arruinaram a maioria, mas uma última arte de forja antiga permanece, perto da cratera.</p>
+                            <p class="card-text">Segundo a lenda, aquele que desafiar as alturas traiçoeiras forjará uma arma lendária.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-montanha">
+                        <img src="./img/topomontanha.png" class="card-img-top rounded img-tab-extra" alt="Topo da Montanha">
+                        <div class="card-body">
+                                <h5 class="fw-bold text-colored mb-0">Topo da Montanha</h5>
+                            <p class="card-text">O Primeiro Pico. No frio invernal do Primeiro Pico, apenas os mais fortes sobrevivem, e um dragão que comanda o gelo prosperou por mais tempo do que qualquer outro.</p>
+                            <p class="card-text">A lenda diz que uma bênção protetora secreta que manipula o gelo pode ser encontrada no pico, mas o dragão ataca qualquer um que a reivindique.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-apodrecida">
+                        <img src="./img/florestaapodrecia.png" class="card-img-top rounded img-tab-extra" alt="Floresta Apodrecida">
+                        <div class="card-body">
+                                <h5 class="fw-bold text-colored mb-0">Floresta Apodrecida</h5>
+                            <p class="card-text">Uma floresta transformada pelo poder de um deus exterior, tomada pela podridão escarlate e repleta de todo tipo de decomposição. Os sobreviventes da floresta construíram uma torre de fogo para limpar o miasma em decomposição e nutrir materiais que temporariamente afastam a podridão.</p>
+                            <p class="card-text">A lenda fala de uma bênção secreta e protetora da floresta escondida dentro da torre.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 card-noklateo">
+                        <img src="./img/Noklateo.png" class="card-img-top rounded img-tab-extra" alt="Noklateo">
+                        <div class="card-body">
+                                <h5 class="fw-bold text-colored mb-0">Noklateo, a Cidade Encoberta</h5>
+                            <p class="card-text">Uma cidade perdida que foi desolada em uma única noite e selada no subsolo, mas ressurgiu recentemente.A vasta cidade, sem sinais de vida, está repleta de maldições e tomada por mortos-vivos; os únicos restos mortais daqueles que buscavam os tesouros secretos que dizem estar escondidos ali.</p>
+                            <p class="card-text">Um objeto de uma era longínqua jaz aqui consagrado — o meio de duplicar qualquer arma, ou assim dizem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content roxo-escuro">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cadastroModalLabel">Envie seu feedback!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="nome">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="exemplo@exemplo.net">
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-enviar w-100">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
